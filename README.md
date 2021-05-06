@@ -1,8 +1,10 @@
-<div style="text-align:center"><img src="images/Banner.png" /></div>
+<p align="center">
+  <img src="images/Banner.png">
+</p>
 
 # next js template
 
-This repository is a template to what I mostly used, for building a website using next js. you can check out the template [here](https://hello-world-chi-fawn.vercel.app/ "Template website").
+This repository is a template to what I mostly used, for building a website using next js. you can check out the template [here](https://hello-world-chi-fawn.vercel.app/ 'Template website').
 
 <br>
 
