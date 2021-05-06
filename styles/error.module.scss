@@ -7,4 +7,14 @@
   align-items: center;
   height: 100vh;
   box-sizing: border-box;
+  transition-duration: 0.8s;
+  font-size: 2rem;
+}
+
+.container a {
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  &:hover {
+    font-size: 2.2rem;
+  }
 }
