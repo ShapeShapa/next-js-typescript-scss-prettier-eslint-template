@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/Banner.png">
+  <img src="public/Banner.png">
 </p>
 
 # next js template

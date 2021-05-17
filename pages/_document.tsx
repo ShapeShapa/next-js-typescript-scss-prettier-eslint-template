@@ -5,7 +5,10 @@ export default class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta httpEquiv="Content-Type" content="text/html; charset-utf-8" />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

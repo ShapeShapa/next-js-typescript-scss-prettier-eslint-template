@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -7,4 +9,37 @@
   align-items: center;
   height: 100vh;
   box-sizing: border-box;
+}
+
+$font: 'Poppins', sans-serif;
+
+.container h1 {
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    #12c2e9,
+    #00baf7,
+    #20afff,
+    #5ba1ff,
+    #8a90ff,
+    #ae81f4,
+    #cc70e2,
+    #e55dcb,
+    #f450af,
+    #fb4991,
+    #fc4975,
+    #f64f59
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: {
+    size: 11vw;
+    family: $font;
+  }
+
+  @media all and (max-width: 600px) {
+    font: {
+      size: 13vw;
+    }
+  }
 }

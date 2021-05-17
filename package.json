@@ -1,18 +1,35 @@
 {
-  "name": "rumah-export-import",
+  "name": "next-shapa",
   "version": "0.1.0",
+  "description": "A next js template",
+  "license": "MIT",
   "private": true,
+  "author": {
+    "name": "ShapeShapa",
+    "email": "swiveli.production@gmail.com",
+    "url": "https://github.com/ShapeShapa"
+  },
+  "bugs": {
+    "url": "https://github.com/ShapeShapa/next-shapa/issues"
+  },
+  "homepage": "https://github.com/ShapeShapa/next-shapa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShapeShapa/next-shapa.git"
+  },
   "scripts": {
-    "dev": "next dev",
-    "dev:global": "next dev -H 192.168.0.11",
+    "dev": "next dev -H 127.0.0.1",
+    "dev:global": "next dev -H $(ipconfig getifaddr en0)",
     "build": "next build",
-    "start": "next start",
-    "start:global": "next start -H 192.168.0.11"
+    "start": "next start -H 127.0.0.1",
+    "start:global": "next start -H $(ipconfig getifaddr en0)",
+    "build-start": "next build && next start"
   },
   "dependencies": {
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "sitemap": "^7.0.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.5",
