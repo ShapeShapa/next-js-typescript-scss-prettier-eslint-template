@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A next js template",
   "license": "MIT",
+  "homepage": "https://github.com/ShapeShapa/next-shapa",
   "private": true,
   "author": {
     "name": "ShapeShapa",
@@ -12,7 +13,6 @@
   "bugs": {
     "url": "https://github.com/ShapeShapa/next-shapa/issues"
   },
-  "homepage": "https://github.com/ShapeShapa/next-shapa",
   "repository": {
     "type": "git",
     "url": "https://github.com/ShapeShapa/next-shapa.git"
@@ -23,7 +23,7 @@
     "build": "next build",
     "start": "next start -H 127.0.0.1",
     "start:global": "next start -H $(ipconfig getifaddr en0)",
-    "build-start": "next build && next start"
+    "build-start": "next build && next start -H 127.0.0.1"
   },
   "dependencies": {
     "next": "10.2.0",

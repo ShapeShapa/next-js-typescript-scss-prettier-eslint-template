@@ -40,6 +40,11 @@
         "react/react-in-jsx-scope": "off",
         "react/jsx-props-no-spreading": "off",
         "no-undef": "off",
-        "jsx-a11y/anchor-is-valid": "off"
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/prop-types": 0,
+        "no-use-before-define": "warn",
+        "import/no-unresolved": "off",
+        "import/extensions": "off",
+        "import/no-extraneous-dependencies": "off"
     }
 }

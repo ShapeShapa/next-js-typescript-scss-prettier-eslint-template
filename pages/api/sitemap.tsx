@@ -10,7 +10,7 @@ interface siteLinks {
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const links: siteLinks[] = [{ url: '/', changefreq: 'daily', priority: 0.3 }]
+  const links: siteLinks[] = [{ url: '/', changefreq: 'daily', priority: 0.8 }]
 
   const { host } = req.headers
 
