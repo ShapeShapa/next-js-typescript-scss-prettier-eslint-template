@@ -29,5 +29,5 @@ const generateRobots = async () => {
 
   fs.writeFileSync('public/robots.txt', content)
 }
-generateRobots()
+
 module.exports = generateRobots
