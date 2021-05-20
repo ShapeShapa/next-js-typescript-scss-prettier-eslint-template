@@ -18,14 +18,17 @@
     "url": "https://github.com/ShapeShapa/next-shapa.git"
   },
   "scripts": {
-    "dev": "next dev -H 127.0.0.1",
+    "dev": "next dev",
     "dev:global": "next dev -H $(ipconfig getifaddr en0)",
     "build": "next build",
-    "start": "next start -H 127.0.0.1",
+    "start": "next start",
     "start:global": "next start -H $(ipconfig getifaddr en0)",
-    "build-start": "next build && next start -H 127.0.0.1"
+    "build-start": "next build && next start",
+    "lint:check": "eslint -f visualstudio ./pages ./scripts",
+    "lint:json": "eslint -f json ./pages ./scripts"
   },
   "dependencies": {
+    "dotenv": "^9.0.2",
     "next": "10.2.0",
     "nextjs-sitemap-generator": "^1.3.1",
     "react": "17.0.2",
@@ -47,6 +50,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "generate-robotstxt": "^8.0.3",
     "globby": "^11.0.3",
     "prettier": "^2.2.1",
     "sass": "^1.32.12",

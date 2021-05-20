@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://next-shapa.vercel.app/api/sitemap
+Sitemap: http://localhost:3000/api/sitemap
+Host: localhost:3000

@@ -37,8 +37,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     }
   })
 
-  console.log(config)
-
   const stream = new SitemapStream({ hostname: `https://${host}` })
 
   res.writeHead(200, { 'Content-Type': 'application/xml' })
@@ -49,4 +47,3 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   res.end(xmlString)
 }
-// 40:52

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fs = require('fs')
 
 const globby = require('globby')
@@ -12,11 +13,11 @@ const generateSitemap = async () => {
         .replace('pages', '')
         .replace('.tsx', '')
         .replace('.mdx', '')
-      const route = path === '/index' ? '/' : path
-      return route
+        .replace('/index', '/')
+      return path
     }),
   }
-  console.log(formatted)
+
   fs.writeFileSync('public/routes.json', JSON.stringify(formatted))
 }
 
