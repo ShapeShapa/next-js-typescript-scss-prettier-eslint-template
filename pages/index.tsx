@@ -1,6 +1,8 @@
 import Head from 'next/head'
-// import Image from 'next/image'
+
 import styles from '../styles/Home.module.scss'
+
+import Footer from '../components/footer'
 
 const description = 'This is a next js template that i call next shapa'
 
@@ -24,13 +26,36 @@ const SeoMetas = () => (
 
 export default function Home(): JSX.Element {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Next shapa</title>
-        <SeoMetas />
-      </Head>
-
-      <h1>next shapa.</h1>
-    </div>
+    <>
+      <div className={styles.container}>
+        <Head>
+          <title>Next shapa</title>
+          <SeoMetas />
+        </Head>
+        <div className={styles.gradient}>
+          <h1>next shapa.</h1>
+        </div>
+      </div>
+      <Footer
+        socials={[
+          {
+            title: 'Twitter',
+            link: 'https://twitter.com/',
+          },
+          {
+            title: 'Codepen',
+            link: 'https://codepen.io/',
+          },
+          {
+            title: 'Dribbble',
+            link: 'https://dribbble.com/',
+          },
+          {
+            title: 'Github',
+            link: 'https://github.com/ShapeShapa',
+          },
+        ]}
+      />
+    </>
   )
 }

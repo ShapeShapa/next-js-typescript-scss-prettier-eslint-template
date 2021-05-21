@@ -24,8 +24,9 @@
     "start": "next start",
     "start:global": "next start -H $(ipconfig getifaddr en0)",
     "build-start": "next build && next start",
-    "lint:check": "eslint -f visualstudio ./pages ./scripts",
-    "lint:json": "eslint -f json ./pages ./scripts"
+    "build-start:global": "next build && next start -H $(ipconfig getifaddr en0)",
+    "lint:check": "eslint -f visualstudio .",
+    "lint:json": "eslint -f json ."
   },
   "dependencies": {
     "dotenv": "^9.0.2",
