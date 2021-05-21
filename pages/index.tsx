@@ -1,8 +1,7 @@
 import Head from 'next/head'
 
-import styles from '../styles/Home.module.scss'
-
-import Footer from '../components/footer'
+import styles from 'styles/Home.module.scss'
+import Footer from 'components/footer'
 
 const description = 'This is a next js template that i call next shapa'
 
@@ -20,6 +19,8 @@ const SeoMetas = () => (
     />
     <meta property="og:site_name" content="next shapa" key="ogsitename" />
     <meta property="og:title" content="Twitter title" key="ogtitle" />
+    <meta property="og:image:alt" content="A template banner" />
+    <meta property="og:type" content="website" />
     <meta property="og:description" content={description} key="ogdesc" />
   </>
 )

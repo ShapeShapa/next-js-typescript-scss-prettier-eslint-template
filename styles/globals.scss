@@ -4,25 +4,16 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #1a1a1b;
+  }
+  @media (prefers-color-scheme: light) {
+    background-color: #ffffff;
+  }
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-// Dark theme
-@media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: #1a1a1b;
-  }
-}
-
-// Light theme
-@media (prefers-color-scheme: light) {
-  html,
-  body {
-    background-color: #ffffff;
-  }
 }
