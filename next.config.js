@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const generateSitemap = require('./scripts/generate-sitemap')
 const generateRobots = require('./scripts/generate-robots')
+const openSite = require('./scripts/open-site')
 
 module.exports = {
   future: {
@@ -10,6 +11,7 @@ module.exports = {
     if (isServer) {
       generateSitemap()
       generateRobots()
+      openSite()
     }
     return config
   },

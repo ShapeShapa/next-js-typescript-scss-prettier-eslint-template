@@ -37,26 +37,7 @@ export default function Home(): JSX.Element {
           <h1>next shapa.</h1>
         </div>
       </div>
-      <Footer
-        socials={[
-          {
-            title: 'Twitter',
-            link: 'https://twitter.com/',
-          },
-          {
-            title: 'Codepen',
-            link: 'https://codepen.io/',
-          },
-          {
-            title: 'Dribbble',
-            link: 'https://dribbble.com/',
-          },
-          {
-            title: 'Github',
-            link: 'https://github.com/ShapeShapa',
-          },
-        ]}
-      />
+      <Footer />
     </>
   )
 }
