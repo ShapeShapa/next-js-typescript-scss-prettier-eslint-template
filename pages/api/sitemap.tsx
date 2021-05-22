@@ -1,12 +1,7 @@
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { Readable } from 'stream'
 import { NextApiRequest, NextApiResponse } from 'next'
-
-interface siteLinks {
-  url: string
-  changefreq?: string
-  priority: number
-}
+import { siteLinks } from 'interfaces/siteLinks'
 
 // eslint-disable-next-line no-underscore-dangle
 const _defaults = {
