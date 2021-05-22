@@ -51,7 +51,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-react-hooks": "^1.7.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "generate-robotstxt": "^8.0.3",
     "globby": "^11.0.3",
     "prettier": "^2.2.1",
