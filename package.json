@@ -54,7 +54,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "generate-robotstxt": "^8.0.3",
     "globby": "^11.0.3",
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.0",
     "sass": "^1.32.12",
     "typescript": "^4.2.4"
   }
