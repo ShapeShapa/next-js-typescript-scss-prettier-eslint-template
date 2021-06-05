@@ -55,7 +55,7 @@
     "generate-robotstxt": "^8.0.3",
     "globby": "^11.0.3",
     "prettier": "^2.3.0",
-    "sass": "^1.32.12",
+    "sass": "^1.34.1",
     "typescript": "^4.2.4"
   }
 }
