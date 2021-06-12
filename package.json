@@ -21,10 +21,8 @@
     "dev": "next dev",
     "dev:global": "next dev -H $(ipconfig getifaddr en0)",
     "build": "next build",
-    "start": "next start -p $PORT",
-    "start:global": "next start -H $(ipconfig getifaddr en0)",
+    "start": "if [ -z $PORT ]; then next start; else next start -p $PORT; fi",
     "build-start": "next build && next start",
-    "build-start:global": "next build && next start -H $(ipconfig getifaddr en0)",
     "lint:check": "eslint -f visualstudio .",
     "lint:json": "eslint -f json ."
   },
