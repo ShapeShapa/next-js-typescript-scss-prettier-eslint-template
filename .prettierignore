@@ -1,1 +1,3 @@
 ./pages/_document.tsx
+./node_modules
+.vscode

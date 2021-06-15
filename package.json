@@ -23,25 +23,26 @@
     "build": "next build",
     "start": "if [ -z $PORT ]; then next start; else next start -p $PORT; fi",
     "build-start": "next build && next start",
-    "lint:check": "eslint -f visualstudio .",
-    "lint:json": "eslint -f json ."
+    "lint": "next lint && prettier --check . && eslint --cache .",
+    "lint:fix": "npx eslint --fix-dry-run . && prettier --write ."
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "next": "10.2.3",
+    "next": "11.0.0",
     "nextjs-sitemap-generator": "^1.3.1",
     "open": "^8.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sitemap": "^7.0.0",
-    "ts-node": "^9.1.1"
+    "ts-node": "^10.0.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
     "eslint": "^7.28.0",
     "eslint-config-airbnb": "18.2.1",
+    "eslint-config-next": "^11.0.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
@@ -53,7 +54,7 @@
     "generate-robotstxt": "^8.0.3",
     "globby": "^11.0.3",
     "prettier": "^2.3.1",
-    "sass": "^1.32.12",
+    "sass": "^1.35.0",
     "typescript": "^4.3.2"
   }
 }

@@ -4,9 +4,7 @@ const generateRobots = require('./scripts/generate-robots')
 const openSite = require('./scripts/open-site')
 
 module.exports = {
-  future: {
-    webpack5: true,
-  },
+  webpack5: true,
   webpack: (config, { isServer }) => {
     if (isServer) {
       generateSitemap()
